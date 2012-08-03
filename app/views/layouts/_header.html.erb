@@ -1,13 +1,13 @@
     <header class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to "classes by mullaney", '#', id: "logo" %>
+          <%= link_to "classes by mullaney", root_path, id: "logo" %>
           <nav>
             <ul class="nav pull-right">
-              <li><%= link_to "home",    '#' %></li>
-              <li><%= link_to "about",    '#' %></li>
-              <li><%= link_to "classes", '#' %></li>
-              <li><%= link_to "contact", '#' %></li>
+              <li><%= link_to "home",    root_path %></li>
+              <li><%= link_to "about",   about_path %></li>
+              <li><%= link_to "classes", classes_path %></li>
+              <li><%= link_to "contact", contact_path %></li>
               <li><%= link_to "sign in", '#' %></li>
             </ul>
           </nav>

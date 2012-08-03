@@ -1,9 +1,6 @@
 Classes::Application.routes.draw do
-  get "pages/home"
-
-  get "pages/classes"
-
-  get "pages/about"
-
-  get "pages/contact"
+  root to: 'pages#home'
+  match '/classes', to: 'pages#classes'
+  match '/about',   to: 'pages#about'
+  match '/contact', to: 'pages#contact'
 end
