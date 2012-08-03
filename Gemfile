@@ -15,6 +15,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :test do
   gem 'capybara', '1.1.2'

@@ -4,11 +4,14 @@
           <%= link_to "classes by mullaney", root_path, id: "logo" %>
           <nav>
             <ul class="nav pull-right">
-              <li><%= link_to "home",    root_path %></li>
               <li><%= link_to "about",   about_path %></li>
               <li><%= link_to "classes", classes_path %></li>
-              <li><%= link_to "contact", contact_path %></li>
-              <li><%= link_to "sign in", '#' %></li>
+              <% if current_user %>
+                <li><%= link_to "log out", logout_path %></li>
+              <% else %>
+                <li><%= link_to "sign up", new_user_path %></li>
+                <li><%= link_to "log in",  new_session_path %></li>
+              <% end %>
             </ul>
           </nav>
         </div>
